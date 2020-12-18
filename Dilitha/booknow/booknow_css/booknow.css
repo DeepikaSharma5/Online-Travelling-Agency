@@ -1,0 +1,52 @@
+body {
+  font-family: Arial;
+  color:white;
+  font-size: 25px;
+  padding: 5px;
+}
+p{
+	margin-left: 50px;
+}
+* {
+  box-sizing: border-box;
+}
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+.btn {
+  background-color: #001433;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+  
+
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+a {
+  color: #2196F3;
+}
+.input1 input,select{
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1rem;
+	display: block;
+	padding: 0.5rem 1rem;
+ }
+form{
+	font-size:20px;
+	background:rgba(46,64,83,.7);
+  padding: 0px 20px
+}

@@ -1,0 +1,45 @@
+<?php
+session_start();
+
+$Fullname = "";
+$Email   = "";
+$Telephone   = "";
+$Nationallity   = "";
+$Country   = "";
+$Tour Name   = "";
+$Intended travel date   = "";
+$error = array(); 
+
+$db = mysqli_connect('localhost', 'root', '', 'travel');
+
+
+if (isset($_POST['Email'])) {
+ 
+	$Fullname = mysqli_real_escape_string($db, $_POST[Fullname'']);
+	$Email = mysqli_real_escape_string($db, $_POST['Email ']);
+	$Telephone = mysqli_real_escape_string($db, $_POST['Telephone']);
+	$Nationallity = mysqli_real_escape_string($db, $_POST['Nationallity']);
+	$Country  = mysqli_real_escape_string($db, $_POST['Country']);
+	$Tour Name = mysqli_real_escape_string($db, $_POST['Tour Name']);
+	$Intended travel date = mysqli_real_escape_string($db, $_POST['Intended travel date']);
+
+  if (empty($Fullname)) { array_push($errors, "Admain Fullname is required"); }
+  if (empty($Email)) { array_push($errors, "contact user Email is required"); }
+  if (empty($Telephone)) { array_push($errors, "Telephone is required"); }
+  if (empty($Nationallity)) { array_push($errors, "Nationallity of contact user is required"); }
+  if (empty($Country)) { array_push($errors, "Country is required"); }
+  if (empty($Tour Name)) { array_push($errors, "Tour Name is required"); }
+   if (empty($Intended travel date)) { array_push($errors, "Intended travel date is required"); }
+
+  if (count($error) == 0) {
+  
+  	$query = "INSERT INTO contact user (Fullname ,Email ,Telephone ,Nationality ,Country ,Tour Name ,Intended travel date) 
+  			  VALUES( '$Fullname' ,'$Email' ,'$Telephone' ,'$Nationality' ,'$Country' ,'$Tour Name' ,'$Intended travel date')";
+  	mysqli_query($db, $query);
+  	$_SESSION['Fullname'] = $Fullname;
+  	$_SESSION['success'] = "New contact user is added";
+  	header('location: page2.php');
+  }
+}
+
+?>

@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #000222;
+  padding: 10px;
+  font-family: Arial;
+}
+.page {
+  max-width: 1000px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 50px;
+  word-break: break-all;
+  color:white;
+}
+.box{
+  margin: 8px -16px;
+}
+.box,
+.box .box1 {
+  padding: 8px;
+}
+.box1 {
+  float: left;
+  width: 50%;
+}
+.box:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.box2 {
+  background-color: #D0D3D4;
+  padding: 10px;
+}
+img {
+	float: center;
+}
+

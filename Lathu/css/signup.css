@@ -1,0 +1,59 @@
+body{
+	background-image: url("images/galle.jpg");
+	height 300px;
+	background-size: cover;
+}
+
+.signupBox{
+	position : absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width : 650px;
+	height : 450px;
+	padding: 80px, 40px;
+	box-sizing: border-box;
+	background: rgba(23, 32, 42,.8);
+}
+
+h2{
+	margin: 0;
+	padding:30px 0 10px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 35px;
+	font-family: Broadway;
+}
+
+.signupBoxForm{
+	margin: 20px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: ;
+}
+
+.signupBox button{
+	width: 50%;
+	margin-button: 10px;
+}
+
+.signupBox button[type = "submit"]
+{
+	background-color: #229954;
+  	color: white;
+  	padding: 14px 20px;
+  	margin: 8px 0;
+  	border: none;
+  	cursor: pointer;
+ 	width: 100%;
+  	opacity: 0.9;
+	float: left;
+  	width: 50%;
+}
+
+.signupBox button[type = "submit"]
+{
+	background-color: #935034;
+
+}

@@ -1,0 +1,141 @@
+  html, body {
+      min-height: 100%;
+      }
+      body, div, form, input, p { 
+      padding: 0;
+      margin: 0;
+      outline: none;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 17px;
+      color: #eee;
+      }
+      body {
+      background: url("background.jpg") no-repeat center;
+      background-size: cover;
+      }
+      .re {
+      text-transform: uppercase;
+      font-weight: 400;
+	  text-align:center;
+      }
+      h2 {
+      margin: 0 0 0 8px;
+      }
+      .page {
+      display: flex;
+      height: 85%;
+      padding: 25px;
+      background: rgba(0, 0, 0, 0.5); 
+      }
+      .review, form {
+      padding:20px;
+      }
+      .review {
+      text-align:left;
+      }
+      form {
+      background: rgba(0, 0, 0, 0.7); 
+      }
+	
+	 .comment input{
+	 width:100%;
+	 margin-bottom:50px;
+	 border:none;
+	 }
+      .comment {
+      display: flex;
+      text-align:left;
+      margin-bottom: 30px;
+      }
+      
+      input{
+      padding:2px;
+      margin-bottom:30px;
+      background: none;
+      border: none;
+      border-bottom: 1px solid #eee;
+	  width:100%
+      }
+     
+      button {
+      padding: 15px;
+      border: none;
+      background: #26a9e0; 
+      font-size: 15px;
+      color: #fff;
+      width: 100%;
+	  cursor:pointer;
+	  }
+      
+      button:hover, .btn-item:hover {
+      background: #85d6de;
+      }
+	  
+	   .BTNSUB button{
+		  border:1px sloid blue;
+		  color:black;
+		  cursor: pointer;
+		  float:left;
+		  justify-content: center;
+		  background: #26a9e0; 
+          font-size: 15px;
+          color: black;
+          width: 33.32%;
+	  }
+	  
+	  .BTNSUB button:hover{
+		  background:#85d6de;
+	  }
+	  
+	 
+
+.rating{
+	direction : rtl;
+	text-align:center;
+}
+
+.rating label{
+	display:inline-block;
+	width:30px;
+	position: relative;
+	cursor:pointer;
+}
+.rating  input{
+	display:none;
+}
+.rating label:before{
+	content:"\2605";
+	position: absolute;
+	font-size: 30px;
+	display:inline-block;
+	top:0;
+	left:0;
+}
+.rating label:after{
+	content:"\2605";
+	position:absolute;
+	font-size:30px;
+	display:inline-block;
+	top:0;
+	left:0;
+	color:gold;
+	opacity:0;
+}
+.rating lable:hover:after, 
+.rating habel:hover~label:after,
+.rating input:checked ~ label:after{
+	opacity:1;
+}
+
+.button {
+  background-color:black;
+  color: white;
+  padding: 2px;
+  text-align: center;
+  font-size: 16px;
+  display:block;
+  cursor:pointer;
+  
+  
+}
+

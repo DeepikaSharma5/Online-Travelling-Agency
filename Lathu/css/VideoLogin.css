@@ -1,0 +1,66 @@
+body{
+	background-image: url("images/adminLogin.jpg");
+	height 1000px;
+	background-size: cover;
+}
+
+.loginBox{
+	position : absolute;
+	top: 50%;
+	left: 80%;
+	transform: translate(-50%,-50%);
+	width : 350px;
+	height : 420px;
+	padding: 80px, 40px;
+	box-sizing: border-box;
+	background: rgba(46, 64, 83,.7);
+}
+
+h2{
+	margin: 0;
+	padding:30px 0 30px;
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 35px;
+	font-family: Broadway;
+}
+
+.loginBoxForm{
+	margin: 30px;
+	font-weight: bold;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-family: ;
+}
+
+.loginBox input{
+	width: 100%;
+	margin-button: 20px;
+}
+
+.loginBox input[type = "text"],
+.loginBox input[type = "password"] {
+	border: none;
+	border-buttom: 5px solid #FFFFFF;
+	background: transparent;
+	outline: none;
+	height: 40px;
+	font-size: 15px;
+	color: #FFFFFF;
+}
+
+::placeholder {
+	color: rgba(255,255,255,.5);
+}
+
+.loginBox input[type = "button"]{
+	border: none;
+	width: 50%;
+	display: block;
+	margin: 0px auto;
+	outline: none;
+	height: 40px;
+	color: #FFFFFF;
+	font-size: 16px;
+	background: #C0392B  
+}
